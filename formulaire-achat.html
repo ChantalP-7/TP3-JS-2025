@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panier d'achat</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <script src="./assets/js/navigation.js" defer></script>
+        <script src="./assets/js/formulaire.js" defer></script>        
+    </head>
+    <body class="fond-blanc">
+        <header>
+            <div class="header">
+                <div class="logo-titre">
+                    <a href="./index.html"><img src="./assets/img/Logo-final.png" class="logo" alt="logo"></a><h1>De la ferme à la table</h1>
+                </div>
+                <div class="navigation">
+                    <!--<img class="img-nav" src="assets/img/sans-cruaute-animale.png" alt="">-->   
+                    <nav class="nav">
+                        
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <h1 class="titre-formulaire">Formulaire d'achat</h1>
+        <div class="trois-img-grille">
+            <img src="./assets/img/imgPrincipale/Enfants-lapin.jpg" alt="lait-de-brebis">
+            <img src="./assets/img/imgPrincipale/cupkake-citron-framboise-carre.jpg" alt="visite-familiale">
+            <img src="./assets/img/imgPrincipale/nos-fromages-fins.jpg" alt="oeufs-frais">
+        </div>
+        <main class="main-formulaire">
+            <h1>Panier d'achat 🛒</h1>
+            <form action="" method="get" id="achat">
+                <div class="progress-bar__container">
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill"></div>
+                    </div>
+                </div>
+                <section data-index="0">
+                    <h2>Étape 1 - Informations personnelles</h2>   
+                    <span class="span-required label-espace"> * Obligatoire</span>             
+                    <div class="grille">
+                        <div class="div-flex">
+
+                            <label for="nom">Nom</label>   
+                            <input  type="text" id="nom" name="nom" required  pattern="(^[a-zA-Z]{2, 30} [a-zA-Z]{2, 30}$)" >
+                            <p class="message-erreur">Saisissez un prénom et un nom : minimal 2 lettres chacun</p>
+
+                            <label for="courriel">Courriel
+                            </label>
+                            <input  type="email" id="courriel" name="courriel" minlength="8" maxlength="20"  required pattern="^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$">
+                            <p class="message-erreur ">Format courriel : aa@aaaaa (au minimum 8 incluant @)</p>
+
+                            <label for="telephone">Téléphone
+                            </label>
+                            <input  type="tel" id="telephone" name="telephone"
+                            pattern="\(?(\d{3})\)?\s?-?(\d{3})\s?-?(\d{4})"
+                            required>
+                            <p class="message-erreur">Format téléphone : 222-222-2222</p>
+                            
+                        </div>
+                        <div class="div-flex">
+                            
+                            <label for="adresse">Adresse
+                            </label>
+                            <input type="text" id="adresse" name="noCivique" minlength="8" maxlength="150" 
+                            
+                            required>
+                            <p class="message-erreur">Format adresse : 2 ee aaa (au minimum)</p>
+                       
+                            <label for="ville">Ville
+                            </label>
+                            <input  type="text" id="ville" name="ville" minlength="3" maxlength="100" required>
+                            <p class="message-erreur ">Ville : 3 lettres minm</p>
+                        
+                            <label for="codePostal">Code postal
+                            </label>
+                            <!--J'ai trouvé ce regex ici : https://stackoverflow.com/questions/15774555/efficient-regex-for-canadian-postal-code-function-->
+                            <input  type="text" id="codePostal" name="codePostal"
+                            pattern="^[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1}\s?[0-9]{1}[a-zA-Z]{1}[0-9]{1}$" 
+                            required>
+                            <p class="message-erreur">Format code postal : H1H 2H2 ou H1H2H2</p>
+                            
+                        </div> 
+                    </div> 
+                </section>        
+                <section data-index="1">
+                    <div class="produits">
+                        <h2>Étape 2 - Notre boutique fermière</h2>                        
+                        <div class="div-flex select"> 
+                            <label for="laitage">Produits laitier</label>                                                         
+                            <select name="laitage" class="produitASelectionner" id="laitage">                                
+                                <option value="">Fais un choix</option>
+                                <option value="lait">Lait frais</option>
+                                <option value="creme">Crème fraîche</option>
+                                <option value="Fromage brie">Fromage Brie</option>
+                                <option value="Fromage de brebis">Fromage de brebis</option>
+                                <option value="Yogourt">Yogourt frais nature</option>
+                            </select>  
+                        </div>                       
+                        <br>
+                        <div class="div-flex select">    
+                            <label for="oeuf">Oeufs et produits cuisinés</label>  
+                            <select name="oeuf" class="produitASelectionner" id="oeuf">                                
+                                <option value="">Fais un choix</option>
+                                <option value="douzaine d'oeufs">Douzaine d'oeufs</option>
+                                <option value="Quiche aux épinards">Quiche aux épinards</option>
+                                <option value="flanc aux oeufs">Flanc aux oeufs</option>
+                                <option value="tarte aux oeufs">Tarte aux oeufs</option>
+                            </select>              
+                        </div>                         
+                        <br>
+                        <div class="div-flex select">   
+                            <label for="verger">Pommes et desserts</label>                                                       
+                            <select name="verger" class="produitASelectionner" id="verger">                                
+                                <option value="">Fais un choix</option>
+                                <option value="cuillette de pommes">Cueillette une journée</option>
+                                <option value="sac de pommes">Sac de pommes</option>
+                                <option value="tarte aux pommes">Tarte aux pommes</option>
+                                <option value="gelée de pommes">Gelée de pommes</option>
+                                <option value="croustade de pommes">Croustade de pommes</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="div-flex produitCheck"> 
+                            <div class="liste-radio">
+                                <label for="visite">Visite Familiale</label>
+                                <input type="checkbox" class="caseVisite" id="visite" name="visite" value="Visite familiale"> 
+                                <label for="potager">Potager communautaire</label>
+                                <input type="checkbox" class="casePotager" id="potager" name="potager" value="Potager communautaire" > 
+                                <label for="atelier">Atelier culinaire</label>
+                                <input type="checkbox" class="caseAtelier" id="atelier" name="atelier" value="Atelier Culinaire"> 
+                            </div>
+                        </div>
+                    </div>
+                </section>       
+                <section data-index="2">
+                    <div class="livraison">
+                        <h2>Étape 3 - Cueillette ou livraison</h2>
+                        <div class="div-flex">
+                            <div class="div-checkbox">
+                                <h2>Cueillette à la ferme</h2>
+                                <label for="cueilletteSuccursale">Cliquer pour la ferme</label>
+                                <input type="checkbox" class="caseACocher" id="cueilletteSuccursale" name="cueilletteSuccursale"> 
+                            </div>
+                            <div>
+                                <select name="succursale" class="villeASelectionner" id="succursale" disabled required>                                
+                                    <option value="">Choisissez un point de cueillette</option>
+                                    <option value="montreal">Montréal</option>
+                                    <option value="sherbrooke">Sherbrooke</option>
+                                    <option value="quebec">Québec</option>
+                                    <option value="brossard">Brossard</option>
+                                    <option value="trois-rivieres">Trois-Rivières</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div>
+                            <h2>Choisir une date</h2>
+                            <label class="label-titre" for="dateCueillette" >Date de cueillette si cliqué
+                            <span class="span-required label-espace"> * Obligatoire</span></label>
+                            <input 
+                            type="date" 
+                            id="dateCueillette" 
+                            name="dateCueillette"
+                            min="2025-03-09"
+                                max="2025-05-01"                                
+                                required
+                                disabled
+                            >
+                            <p class="message-erreur">Vous devez saisir une date</p>
+                        </div> 
+                        <br>
+                        <hr>-----------------------------------------------------------------------------</hr>   
+                        <br>
+                        <div class="flex-row-left"> 
+                            <div class="div-checkbox">
+                                <h2>Service de livraison</h2>
+                                <label for="livraison">Cliquer pour livraison</label>
+                                <input type="checkbox" class="caseACocher2" id="livraison" name="livraison"> 
+                            </div>
+                            <div class="div-radios flex-left invisible required" >
+                                <label for="lendemain">Lendemain</label>                            
+                                <input type="radio" id="lendemain" name="moyenDeLivraison" value="Lendemain">
+                                <label for="deuxJours">Deux jours</label>
+                                <input type="radio" id="deuxJours" name="moyenDeLivraison" value="Deux jours">
+                                <label for="uneSemaine">Une semaine</label>
+                                <input type="radio" id="uneSemaine" name="moyenDeLivraison" value="Une semaine">
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Choisir une date de cueillette ou livraison</h2>
+                            <label class="label-titre" for="dateLivraison" >Date de livraison si cliqué
+                            <span class="span-required label-espace"> * Obligatoire</span></label>
+                            <input 
+                            type="date" 
+                            id="dateLivraison" 
+                            name="dateLivraison"
+                            min="2025-03-09"
+                                max="2025-05-01"                                
+                                required
+                                disabled
+                            >
+                            <p class="message-erreur">Vous devez saisir une date</p>
+                        </div> 
+                    </div>   
+                </section>       
+                <section class="resume" data-index="3">
+                    <h2>Étape 4 - Résumé du panier</h2>
+                    <div>
+                        <h3>Informations personnelles</h3>
+                        <p >
+                        <span data-champ="nom"></span>
+                        </p>
+                        <p >
+                        <span data-champ="courriel"></span>
+                        </p>
+                        <p >
+                        <span data-champ="telephone"></span>
+                        </p>
+                        <h3>Adresse</h3>
+                        <p >
+                        <span data-champ="noCivique"></span>
+                        </p>
+                        <p >
+                        <span data-champ="ville"></span>
+                        </p>
+                        <p >
+                        <span data-champ="codePostal"></span>
+                        </p>
+                    </div>
+                    <div class="panier">
+                        <h3>Panier produits et services</h3>
+                        <p >
+                        <span data-champ="laitage"></span>
+                        </p> 
+                        <p>
+                        <span data-champ="oeuf"></span>
+                        </p>
+                        <p>
+                        <span data-champ="verger"></span>
+                        </p>                     
+                        <p >
+                        <span data-champ="visite"></span>
+                        </p>
+                        <p>
+                        <span data-champ="potager"></span>
+                        </p>
+                        <p>
+                        <span data-champ="atelier"></span>
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Information point de cueillette</h3>                    
+                        <p>
+                            <span class="sous-titre">Cueillette</span>
+                        </p>                           
+                        <p >
+                        <span data-champ="cueilletteSuccursale">Non</span>
+                        </p>              
+                        <p >                        
+                        <span data-champ="succursale"></span>
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Date de la cueillette</h3>
+                        <p>
+                            <span class="sous-titre">Date désirée</span> 
+                        </p>
+                        <p >
+                            <span data-champ="dateCueillette"></span>
+                        </p> 
+                    </div>
+                    <p>-------------------------------------------------------------</p>
+                    <div>
+                        <h3>Information de la livraison</h3>
+                        <p>
+                            <span class="sous-titre">Livraison </span>   
+                        </p>   
+                        <p >
+                        <span data-champ="livraison">Non</span>
+                        </p>                                   
+                        <p >
+                        <span data-champ="moyenDeLivraison"></span>
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Date de livraison</h3>
+                        <p>
+                            <span class="sous-titre">Date désirée</span> 
+                        </p>
+                        <p >
+                            <span data-champ="dateLivraison"></span>
+                        </p> 
+                    </div>
+                                                    
+                </section>
+                <div class="nav-bouton">
+                    <div  class="bouton-formulaire reculer " data-direction="-1"><span>Précédent</span></div>
+                    <div  class="bouton-formulaire avancer " data-direction="1"><span>Suivant</span></div>
+                    <input type="submit" class="soumission" value="Envoyer" ></input>
+                </div>     
+                                               
+            </form>
+        </main>
+        <footer>Tous droits réservés : <a href="#">De la ferme à la table inc.</a></footer>  
+    </body>
+</html>

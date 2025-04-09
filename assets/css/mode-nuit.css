@@ -1,0 +1,16 @@
+[data-mode] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La couleur background des icones svg*/
+
+[data-mode-option="nuit"], [data-mode-option="jour"] {
+    background-color: var(--blanc);
+    border-radius: 8px;
+    padding: 5px;
+    
+}
+
+

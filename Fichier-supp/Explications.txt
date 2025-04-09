@@ -1,0 +1,21 @@
+J'ai continué sur le thème de la ferme. J'ai consulté quelques sites de ferme pour m'inspirer. J'ai choisi toutes les photos sur deux sites libres de droits : Pixabay et Pexels.
+
+J'ai choisi plusieurs types d'animations, soit celles au survol d'un élément, au défilement de la page et la boîte modale qui apparaît aprè 5 secondes. J'ai aussi mis les références où j'ai trouvé des idées d'animation pour m'inspirer.
+
+Il y a l'animation du logo lors du défilement, deux animations avec la Class AnimatorScroll. Au défilement, les titres et le paragraphe sont animés. Dans la liste des activités au haut de la page, les li s'animent une par une. J'aime beaucoup l'effet, mais je trouve que cela démarre trop tôt et j'aurais aimé que cela s'anime infinite. Seulement, tout ce que j'ai essayé, ça gâchait l'effet. Avec la popup qui apparaît 5 minute après, permet de voir l'animation des deux listes. J'ai aussi ajouté pour les deux galeries de médaillons un effet de survol : un zoom de l'image et la légende qui apparaît en dessous et qui disparait en quittant l'image.
+
+Je trouve que l'effet est intéressant et cela fonctionne avec l'histoire de la ferme. Et finalment, j'ai mis un filtre sombre au passage de la souris sur l'image de la ferme et les 4 dernières images du bas.
+
+Bien sûr, il y l'animation de jour et de nuit. j'ai choisi un jaune clair pour le mode jour et un marine foncé pour le mode nuit.
+
+Je suis déçue de ne pas avoir réussi à animer les boutons. Ils étaient comme "jammés" 😁
+
+Je pense aussi qu'il y a assez d'animations pour cette page.
+
+J'ai eu par moment des difficultés et c'est avec plusieurs essais avec des versions différentes que j'ai pu parvenir à ce résultat. Les fonctions du TP3 sont mises dans des dossiers différents dans le dossier modules. Un fichier pour la boite-modale, un pour le mode-nuit, un pour une fonction zoom pour le logo, un pour le caroussel.Elles sont importées dans le fichier principal js de ce tp3, soit la page a-propos.js
+
+J'ai apprécié l'ensemble du travail (Tp1, tp2 et tp3). J'ai beaucoup appris et je me suis améliorée.
+
+https://chantaloup.github.io/3-TP3-JS-vf-2195524/
+
+Malheureusement, le css ne fonctionne pas sur github

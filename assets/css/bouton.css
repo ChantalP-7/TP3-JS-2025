@@ -1,0 +1,47 @@
+.bouton {
+    text-decoration: none;
+    background-color: var(--blanc);
+    color: var(--charbon);
+    padding: 10px 22px;
+    border: 1px solid var(--charbon);
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bouton:hover {
+    background-color: var(--vert);
+    border: 1px solid transparent;
+    color: var(--blanc);
+    cursor: pointer;
+}
+
+.bouton-centre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton.vert {
+    background-color: var(--vert);
+    color: white;
+    border: 1px solid transparent;
+    box-shadow: var(--boxShadow);
+}
+
+.bouton.vert:hover {
+    background-color: var(--blanc);
+    color: var(--charbon);
+    border-color: var(--charbon);
+}
+
+.bouton-anim {
+    background-color: var(--vert);
+    color: var(--blanc);
+    border-color: transparent;
+}
+.bouton-anim:hover {
+    background-color: var(--bleuPrincipal);    
+}

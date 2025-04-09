@@ -1,0 +1,48 @@
+.boite-modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20;
+    gap: 10px;
+    transition: opacity 1s, visibility 1s;
+    color: var(--blanc)
+}
+
+.boite-modale img {
+    max-width: 300px;
+    border: white solid 5px;
+    border-radius: 10px;;
+}
+
+.boite-modale h1 {
+    font-size: 40px;
+    font-family: amita;
+}
+.boite-modale h3 {
+    font-size: 32px;
+}
+.boite-modale p {
+    font-size: 28px;
+}
+
+span {
+    color: var(--blanc);
+    padding: 0px 15px 0px 15px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 1px dotted var(--blanc);
+}
+
+.en-tete {
+    display: flex;
+    gap: 5px;
+}

@@ -1,0 +1,148 @@
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+   30% {transform: translateY(-30px);}
+   70% {transform: translateY(-15px);}
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInListe {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0) ; 
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0); 
+	}  
+}
+
+@keyframes animatetop{
+  from{top:-300px; opacity:0} to{top:0; opacity:1}
+}
+
+@keyframes animatebottom{
+  from{bottom:-300px; opacity:0} to{bottom:0; opacity:1}
+}
+
+@keyframes animedroite{
+  from{right:400px;opacity:0} to{right:0;opacity:1}
+}
+
+
+/* https://css-tricks.com/how-to-play-and-pause-css-animations-with-css-custom-properties/  */
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  25% { transform: scale(.9); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes slide {
+  from { margin-left: 0%; }
+  to { margin-left: 150px; }
+}
+
+.bouton-pulse {
+  animation-name: pulse;
+}
+
+.text-slide {
+  animation-duration: 1s;
+  animation-name: slide;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 0.7s;
+  animation-delay: 0.3s;
+}
+
+.fade-in {
+  animation: fade-in 1s linear;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+.anim-top.haut {
+   animation:animatetop 2s;
+   transition-delay: 2s
+}  
+
+.anim-bottom.bas {
+   animation:animatebottom 2s;
+   transition-delay: 2s
+} 
+
+/* Section zoom : Pris ce CSS de https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+
+.zoom {
+  cursor: pointer; 
+  transition: transform .8s ease-in-out;
+}
+
+.zoom:hover {
+transform: scale(1.2);
+}
+
+/* Autres fadein  : RÉFÉRENCES : https://dev.to/selbekk/how-to-fade-in-content-as-it-scrolls-into-view-10j4 */
+
+.paragraphe {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.3s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.paragraphe.est-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+/* Pour une liste animée : https://codepen.io/microbee/pen/QXMKVx*/
+
+.liste  {
+   
+  & li:nth-child(1) {
+	animation-delay: 0.5s;    
+  }
+  & li:nth-child(2) {
+	animation-delay: 1s;
+  }
+  & li:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+
+  & li:nth-child(4) {
+    animation-delay: 2s;
+  }
+    
+  & li:nth-child(5) {
+    animation-delay: 2.5s;
+  }
+  & li:nth-child(6) {
+    animation-delay: 3s;
+  }
+}
+
+.anim-droite {
+  animation:animedroite 5s;
+}
+
+.img-principale:hover {
+  filter: brightness(50%);
+  transition: 0.2s ease-in-out;
+}
+
+.grille-2-col-petit img:hover {
+  filter: brightness(50%);
+  transition: 0.2s ease-in-out;
+}

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "News cycle";
+}
+
+body.mode-couleur {
+    background-color: var(--couleur-bg);
+    color: var(--couleur-texte);
+}
+
+body.separation p {
+    background-color: var(--couleur-bg)
+}
+
+
+body li {
+    color: var(--charbon)
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,125 @@
+.grille-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: 30px auto;
+    gap: 30px;
+}
+
+.grille-2-col-petit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.grille-2-col-petit img{
+    min-width: 100%;
+}
+
+.section-large {
+    max-width: max-content;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0;
+    border: none;
+    border-radius: 0px;    
+}
+
+.section-large p {    
+    display: flex;
+    align-items: center;
+}
+
+.section-large h1 {
+    margin-top: 50px !important;
+}
+
+.grille-2-col-large { 
+    display: flex;
+}
+
+.grille-2-col-large > div {
+    flex-basis: 50%; 
+    flex-shrink: 1;
+    flex-grow: 2;
+}
+
+.grille-2-col-large >* {
+    color: var(--charbon);
+}
+
+.grille-2-col-large .degage-haut {
+    margin-top: var(--degage-haut);
+}
+.grille-2-col-large p, h1 {
+    text-align: left;
+}
+
+.grille-2-col-large img {    
+    max-width: 50%;
+}
+
+.grille-3-col {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+}
+
+.grille-3-col img {
+    max-width: 200px;
+    border-radius: 50%;
+    padding: 5px;
+    border: var(--rouge) 2px solid;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.grille-4-col {    
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.grille-4-col img {
+    max-width: 200px;
+    border-radius: 50%;
+    padding: 5px;
+    border: var(--rouge) 2px solid;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+
+     .grille-3-col, .grille-4-col {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 700px) {
+
+     .grille-3-col, .grille-4-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 540px) {
+
+    .grille-2-col, .grille-2-col-large, .grille-3-col, .grille-4-col {
+        display: block;
+        gap: 20px;
+        & img {
+            border-radius: 5px;
+            border: none;
+            min-width: 100%;
+        }
+    }
+
+}

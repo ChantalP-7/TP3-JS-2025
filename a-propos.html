@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/navigation.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js "></script>
+    <script src="./assets/js/a-propos.js" type="module"></script>
+  </head>
+  <body data-theme="jour" class="mode-couleur svg">
+    <header class="entete-evenement">
+      <div class="header">
+        <div class="logo-titre">
+          <a href="./index.html"
+            ><img src="./assets/img/Logo-final.png" class="logo" alt="logo"
+          /></a>
+          <h1>De la ferme à la table</h1>
+        </div>
+        <div class="navigation">
+          <div class="nav-mode-couleur">
+            <nav class="nav rouge"></nav>
+            <div data-mode class="mode-couleur">
+              <img
+                data-mode-option="nuit"
+                src="./assets/img/svg/dark_mode_24dp_255290_FILL0_wght400_GRAD0_opsz24.svg"
+                alt="mode nuit"
+              />
+              <img
+                data-mode-option="jour"
+                src="./assets/img/svg/clear_day_24dp_255290_FILL0_wght400_GRAD0_opsz24.svg"
+                alt="mode jour"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="a-propos">
+      <div>
+        <div data-boite-modale></div>
+        <div>
+          <h1 class="titre-fade-in">Un été à la ferme!</h1>
+          <h2>Notre événement saisonnier est de retour cette année!</h2>
+          <div class="grille-2-col">
+            <ul class="liste promo">
+              <li>Accueil et paniers de bienvenue</li>
+              <li>Visite de notre ferme</li>
+              <li>Démonstration de traite manuelle</li>
+              <li>Ateliers culinaires</li>
+              <li>Ateliers pour les petits</li>
+              <li>Visite des animaux pour tous</li>
+            </ul>
+            <ul class="liste promo">
+              <li>Dégustation de nos produits</li>
+              <li>Visite du potager et du verger</li>
+              <li>Buffet cuisiné avec nos produits</li>
+              <li>Promenade à cheval (écurie voisine)</li>
+              <li>Orchestre, danse et tirages</li>
+              <li>Forfaits moitié-prix</li>
+            </ul>
+          </div>
+        </div>
+        <h1 class="titre-fade-in">Achetez votre passeport pour l'été!</h1>
+        <h2>Voici quelques photos de l'an dernier</h2>
+      </div>
+      <div>
+        <div class="fond-de-page anim-right">
+          <article>
+            <div class="caroussel">
+              <div>
+                <button class="caroussel-bouton" data-direction="-1"><</button>
+              </div>
+              <img
+                data-photo="0"
+                class=""
+                src="./assets/img/imgEvenement/Caroussel/MemeTaille/garcon-oie.jpg"
+                alt="Garçon avec Josette l'oie"
+              />
+              <img
+                data-photo="1"
+                class=""
+                src="./assets/img/imgEvenement/Caroussel/MemeTaille/oies-liberte.jpg"
+                alt="Des poussains plein de vie"
+              />
+              <img
+                data-photo="2"
+                class=""
+                src="./assets/img/imgEvenement/Caroussel/MemeTaille/Mere-fille-lapin2.jpg"
+                alt="On fait la connaissance de Jojo le lapin"
+              />
+              <img
+                data-photo="3"
+                class=""
+                src="./assets/img/imgEvenement/Caroussel/MemeTaille/Enfant-poulailler.jpg"
+                alt="Plaisir pour toute la famille"
+              />
+              <img
+                data-photo="4"
+                class=""
+                src="./assets/img/imgEvenement/Caroussel/MemeTaille/Nourrir-animaux.jpg"
+                alt="On nourrit Jojo le lapin"
+              />
+              <img
+                data-photo="5"
+                class=""
+                src="./assets/img/imgEvenement/Caroussel/MemeTaille/vegan-4833043_1280.jpg"
+                alt="Découverte culinaire"
+              />
+              <img
+                data-photo="6"
+                class=""
+                src="./assets/img/imgEvenement/Caroussel/MemeTaille/Cupcake-framboise.jpg"
+                alt="Cupcake aux framboises"
+              />
+              <img
+                data-photo="7"
+                class=""
+                src="./assets/img/imgEvenement/Caroussel/MemeTaille/Nos-deux-vaches-laitieres.jpg"
+                alt="Nos vaches laitières"
+              />
+              <div>
+                <button class="caroussel-bouton" data-direction="1">></button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <a class="bouton-anim bouton" href="#">Voir toutes les photos</a>
+      </div>
+      <div class="principale">
+        <div>
+          <article id="article1" class="article-principal">
+            <h1 class="titre-fade-in">Notre Histoire</h1>
+            <picture
+              ><img
+                class="img-principale"
+                src="./assets/img/imgPrincipale/Ferme.jpg"
+                alt="Photo de la ferme"
+            /></picture>
+            <p class="paragraphe">
+              Notre ferme familiale existe depuis plusieurs générations, et
+              chaque époque a contribué à façonner son caractère unique.
+              Transmettre les savoirs ancestraux de père en fils et de mère en
+              fille a toujours été au cœur de notre activité, alliant tradition
+              et modernité.
+            </p>
+            <p class="paragraphe">
+              Aujourd'hui, Mélanie, Sébastien et Karina continuent à cultiver la
+              terre avec passion, tout en respectant les valeurs qui leur ont
+              été transmises depuis leur enfance.
+            </p>
+          </article>
+        </div>
+        <div class="separation"><p></p></div>
+        <h1 class="titre-fade-in">Un frère et deux soeurs</h1>
+        <div id="grille3" class="grille-3-col">
+          <div class="container">
+            <img
+              class="zoom"
+              src="./assets/img/imgEvenement/Carre/Grande-soeur.jpg"
+              alt="Mélanie"
+            />
+            <div class="overlay">Mélanie</div>
+          </div>
+          <div class="container">
+            <img
+              class="zoom"
+              src="./assets/img/imgEvenement/Carre/Grand-frere.jpg"
+              alt="Sébastien"
+            />
+            <div class="overlay">Sébastien</div>
+          </div>
+          <div class="container">
+            <img
+              class="zoom"
+              src="./assets/img/imgEvenement/Carre/Jeune-soeur.jpg"
+              alt="Karina"
+            />
+            <div class="overlay">Karina</div>
+          </div>
+        </div>
+        <h1 class="titre-fade-in">La famille s'agrandit!</h1>
+        <div id="grille4" class="grille-4-col">
+          <div class="container">
+            <img
+              class="zoom"
+              src="./assets/img/imgEvenement/Carre/Mere-et-fille-ferme-carre.jpg"
+              alt="Mélanie et Marilou"
+            />
+            <div class="overlay">Mélan et Loulou</div>
+          </div>
+          <div class="container">
+            <img
+              class="zoom"
+              src="./assets/img/imgEvenement/Carre/Bebe-cueillette-fraises-carre.jpg"
+              alt="Nicolas et Sébastien"
+            />
+            <div class="overlay">Bébé Nicolas</div>
+          </div>
+          <div class="container">
+            <img
+              class="zoom"
+              src="./assets/img/imgEvenement/Carre/Fillette-chevre-carre.jpg"
+              alt="Chloé"
+            />
+            <div class="overlay">La petite Chloé</div>
+          </div>
+          <div class="container">
+            <img
+              class="zoom"
+              src="./assets/img/imgEvenement/Carre/Brebis-et-son-agneau-carre.jpg"
+              alt="Bibi et son petit"
+            />
+            <div class="overlay">Bibi et son petit</div>
+          </div>
+        </div>
+      </div>
+      <div class="separation"><p></p></div>
+      <div>
+        <h1 class="titre-fade-in">Nos valeurs familiales</h1>
+        <section class="section-large">
+          <div class="grille-2-col-large">
+            <div class="grille-2-col-petit">
+              <img
+                class="cible"
+                src="./assets/img/imgEvenement/Recolte-potager.jpg"
+                alt="Charlotte la vache"
+              />
+              <img
+                class="cible"
+                src="./assets/img/imgEvenement/Canards.jpg"
+                alt="Nos canards"
+              />
+              <img
+                class="cible"
+                src="./assets/img/imgEvenement/Chevreau-regarde.jpg"
+                alt="Ben le chevreau"
+              />
+              <img
+                class="cible"
+                src="./assets/img/imgEvenement/Petits-agneaux.jpg"
+                alt="Nos agneaux"
+              />
+            </div>
+            <div class="texte-bouton-div">
+              <h2 class="">
+                La liberté et le respect des animaux et de la nature
+              </h2>
+              <div class="texte-bouton">
+                <div>
+                  <p class="paragraphe">
+                    À notre ferme, la liberté et le bien-être des animaux sont
+                    essentiels, leur offrant un environnement naturel et
+                    respectueux de leurs besoins.
+                  </p>
+                  <br />
+                  <p class="paragraphe">
+                    Nous croyons fermement que la nature doit être préservée et
+                    traitée avec respect, afin de maintenir un équilibre durable
+                    entre la terre, les animaux et les êtres humains.
+                  </p>
+                </div>
+                <div class="">
+                  <a class="bouton-anim bouton" href="#">Nous-contacter</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      Tous droits réservés : <a href="#">De la ferme à la table inc.</a>
+    </footer>
+    <div></div>
+    <div data-boite-modale class="contenant-modale"></div>
+  </body>
+</html>

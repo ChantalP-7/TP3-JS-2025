@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Playwrite+CL+Guides&display=swap');@import url('https://fonts.googleapis.com/css2?family=Playwrite+CL+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=News+Cycle:wght@400;700&family=Playwrite+CL+Guides&display=swap');
+
+:root {
+
+/* Palette de couleurs */
+--couleur-bg: rgb(255, 255, 255);
+--couleur-texte: black;
+--grisFonce: rgb(32, 38, 49);
+--grisPale: rgba(255, 255, 255, 0.541);
+--grisMoyen: rgb(97, 97, 97);
+--charbon: rgb(24, 24, 24);
+--bleuPrincipal: rgb(131, 152, 196);
+--boxShadow: rgba(197, 197, 197, 0.699);
+--blanc: rgb(255, 255, 255);
+--vert: rgb(99, 197, 42);
+--roseVif: rgb(255, 138, 157);
+--rouge: rgba(221, 11, 11, 0.938);
+--marine: rgb(3, 22, 34);
+
+/* Typographie */
+--newsCycle: "News cycle";
+--amita: "amita";
+
+/* Espacement */
+--degage-haut: 20px
+
+}
+
+[data-theme="jour"] {
+    --couleur-bg: #fff38a;
+    --couleur-texte: rgb(12, 12, 12);
+    --fill-svg: rgb(19, 19, 19);
+}
+
+[data-theme="nuit"] {
+    /*--couleur-bg: rgb(4, 32, 49);*/
+    --couleur-bg: rgb(3, 22, 34);
+    --couleur-texte: white;
+    & .overlay {
+        --couleur-texte: white;
+    }
+}
+
+
+
+

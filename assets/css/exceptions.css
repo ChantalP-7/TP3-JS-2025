@@ -1,0 +1,23 @@
+.invisible {
+    display: none !important;
+}
+
+.inactif {
+    pointer-events: none;
+    background-color: var(--bleuPrincipal) !important;
+    color: var(--grisPale);
+    width: 120px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.disabled {
+    border: 1px solid var(--blanc) !important;
+    color: var(--grisPale) !important;
+    pointer-events: none;
+}
+
+.titre-principal {
+    font-family: var(--amita);
+}
