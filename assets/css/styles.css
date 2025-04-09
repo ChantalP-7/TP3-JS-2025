@@ -1,389 +1,385 @@
 header {
-    background-image: url(/assets/img/imgPrincipale/nos-confitures.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: bottom;
-    height: 400px;
-    padding-left: 60px;
-    padding-right: 60px;
+  background-image: url(../img/imgPrincipale/nos-confitures.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .titre-principal {
-    font-size: 28px;
-    max-width: fit-content;
-    font-family: var(--amita);
-    margin-left: 30px;
-    margin-top: 60px;
-    color: var(--grisFonce);
-    background-color: var(--grisPale);
-    padding: 8px 12px;
-    border-radius: 8px;
+  font-size: 28px;
+  max-width: fit-content;
+  font-family: var(--amita);
+  margin-left: 30px;
+  margin-top: 60px;
+  color: var(--grisFonce);
+  background-color: var(--grisPale);
+  padding: 8px 12px;
+  border-radius: 8px;
 }
 
 .titre-formulaire {
-    font-family: var(--amita);
-    font-size: 40px;
-    text-align: center;
-    margin-top: 50px;
+  font-family: var(--amita);
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .img-nav {
-    width: 80px;
+  width: 80px;
 }
 
 header .logo {
-    max-width: 80px;
-    border: 2px solid var(--blanc);
-    padding: 3px;
+  max-width: 80px;
+  border: 2px solid var(--blanc);
+  padding: 3px;
 }
 
 .logo-titre {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .logo-titre h1 {
-    color: var(--blanc);
-    font-family: amita;
+  color: var(--blanc);
+  font-family: amita;
 }
 
 nav a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: white;
-    font-family: 'News Cycle';
-    font-weight: 500;
-    color: rgb(32, 38, 49);
-    padding: 6px 14px;
-    border-radius: 3px;
-    font-size: 20px;
-    transition: 250ms ease-in-out;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: white;
+  font-family: "News Cycle";
+  font-weight: 500;
+  color: rgb(32, 38, 49);
+  padding: 6px 14px;
+  border-radius: 3px;
+  font-size: 20px;
+  transition: 250ms ease-in-out;
 }
 
 nav a:hover {
-    background-color: rgb(131, 152, 196);
-    color: rgb(255, 255, 255);
+  background-color: rgb(131, 152, 196);
+  color: rgb(255, 255, 255);
 }
 
 .nav-mode-couleur {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
-.mode-couleur  {
-    gap: 20px;
+.mode-couleur {
+  gap: 20px;
 }
 
 .mode-couleur:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 h1 {
-    font-family: var(--newsCycle);
-} 
+  font-family: var(--newsCycle);
+}
 
 h3 {
-    font-family: var(--amita);
+  font-family: var(--amita);
 }
 
 .image-cliquee {
-    border: 2px var(--vert);
+  border: 2px var(--vert);
 }
 
 p {
-    font-family: var(--newsCycle);
-    line-height: 1.5em;
-    font-size: 18px;
+  font-family: var(--newsCycle);
+  line-height: 1.5em;
+  font-size: 18px;
 }
 
 .filtres {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-left: 50px;
 }
 
-.tri {    
-    background-color: var(--grisMoyen);
-    box-shadow: 0 0 14px var(--boxShadow);
-    border: 1px solid var(--blanc);
-    color: var(--blanc);
-    font-size: 18px;
-    font-family: "News Cycle";
-    padding: 7px 22px;
-    border-radius: 5px;
+.tri {
+  background-color: var(--grisMoyen);
+  box-shadow: 0 0 14px var(--boxShadow);
+  border: 1px solid var(--blanc);
+  color: var(--blanc);
+  font-size: 18px;
+  font-family: "News Cycle";
+  padding: 7px 22px;
+  border-radius: 5px;
 }
 
-.tri:Hover {
-    background-color: var(--bleuPrincipal);
-    color: var(--blanc);    
-    cursor: pointer;
-} 
+.tri:hover {
+  background-color: var(--bleuPrincipal);
+  color: var(--blanc);
+  cursor: pointer;
+}
 
 article h1 {
-    font-family: amita;
-    font-size: 35px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    text-align: center;
+  font-family: amita;
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-.grille {    
-    display: grid;
-    grid-template-columns: 1fr 70%;
-    padding-right: 40px;
-    padding-left: 40px;
+.grille {
+  display: grid;
+  grid-template-columns: 1fr 70%;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 aside {
-    width: 90%;
-    padding: 20px;
+  width: 90%;
+  padding: 20px;
 }
 
 .fiche {
-    border-radius: 8px;
-    padding: 0px;
-    background-color: var(--blanc);
-    box-shadow: 0 0 14px var(--boxShadow);
-    justify-content: center;
-    border-radius: 8px;
+  border-radius: 8px;
+  padding: 0px;
+  background-color: var(--blanc);
+  box-shadow: 0 0 14px var(--boxShadow);
+  justify-content: center;
+  border-radius: 8px;
 }
 
 .picture-texte {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.picture-texte h2, p {
-    padding-left: 20px;
-    padding-right: 20px;
+.picture-texte h2,
+p {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .picture-texte .bouton-centre {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .picture-texte img {
-    min-width: 100%;
-    border-radius: 8px 8px 0px 0px;
+  min-width: 100%;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .trois-img-grille {
-    max-width: 800px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    gap: 30px;
-} 
+  max-width: 800px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  gap: 30px;
+}
 
 .trois-img-grille img {
-    width: 250px;
-    border-radius: 50%;
-    padding: 5px;
-    border: 3px solid rgba(13, 13, 104, 0.5);
+  width: 250px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 3px solid rgba(13, 13, 104, 0.5);
 }
 
 aside h1 {
-    font-size: 28px;
-    margin-top: 30px;
-    margin-bottom: 40px;    
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
-
 .cartesProduits {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 100px;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 100px;
+  gap: 30px;
 }
 
 .carte {
-    width: 200px;
-    padding: 5px;
-    margin-bottom: 15px;
-    background-color: var(--blanc);
-    /*box-shadow: 0 0 14px rgba(173, 173, 173, 0.87);*/
-    box-shadow: 0 0 14px var(--boxShadow);
-    border-radius: 10px;
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 15px;
+  background-color: var(--blanc);
+  /*box-shadow: 0 0 14px rgba(173, 173, 173, 0.87);*/
+  box-shadow: 0 0 14px var(--boxShadow);
+  border-radius: 10px;
 }
 
 .carte img {
-    width: 100%;
-    border-radius: 5px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .carte h3 {
-    margin-top: 4px;
-    font-family: var(--newsCycle);
-    text-align: center;
-    margin-bottom: 2px;
+  margin-top: 4px;
+  font-family: var(--newsCycle);
+  text-align: center;
+  margin-bottom: 2px;
 }
 
 .carte a {
-    margin: 10px;
+  margin: 10px;
 }
 
 .carte p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .carteImage:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .carteImageGras {
-    font-weight: 700;
-    margin-top: 10px;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 .tout-centre {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tout-centre img {
+  max-width: 300px;
+  border: white 5px solid;
+  border-radius: 10px;
+}
+
+.tout-centre h1 {
+  font-family: amita;
+}
+
+.h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: var(--newsCycle);
+}
+
+.carteImage img {
+  max-width: 300px;
+}
+
+footer {
+  background-color: var(--charbon);
+  font-family: "News cycle";
+  font-size: 1.3em;
+  color: var(--blanc);
+  padding: 20px;
+  text-align: center;
+}
+
+footer,
+a {
+  color: var(--blanc);
+  text-decoration: none;
+}
+
+.invisible {
+  display: none;
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+  .grille {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: revert-layer;
+    gap: 20px;
+  }
+  .cartesProduits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  .header {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-
-.tout-centre img {
-    max-width: 300px;
-    border: white 5px solid;
-    border-radius: 10px;
-}
-
-.tout-centre h1 {
-    font-family: amita;
-}
-
-.h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: var(--newsCycle);
-}
-
-.carteImage img {
-    max-width: 300px;
-}
-
-
-footer {
-    background-color: var(--charbon);
-    font-family: 'News cycle';
-    font-size: 1.3em;
-    color: var(--blanc);
-    padding: 20px;
+    padding: 15px;
+    padding-top: 20px;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  .header nav {
+    padding-top: 60px;
+  }
+  .titre-principal {
     text-align: center;
+  }
 }
 
-footer,  a {
-    color: var(--blanc);
-    text-decoration: none;
-}
-
-.invisible {
-    display: none;
-}
-
-@media (min-Width: 801px) and (max-width: 1100px) {
-
-    .grille {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column: revert-layer;
-        gap: 20px;
-    }
-    .cartesProduits {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
-    }
-    .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 15px;
-        padding-top: 20px;
-    }
-    .logo {
-        margin-top: 20px;
-    }
-    .header nav {
-        padding-top: 60px
-    }
-    .titre-principal {
-        text-align: center;
-    }
-}
-
-
-@media (min-Width: 300px) and (max-width: 800px) {
-
-    .grille {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column: revert-layer;
-        gap: 20px;
-    }
-    .cartesProduits {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-    .carte {
-        width: 150px
-    }
-    .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 15px;
-        padding-top: 20px;
-    }
-    .logo {
-        margin-top: 20px;
-    }
-    .header nav {
-        padding-top: 60px
-    }
-    .titre-principal {
-        text-align: center;
-    }
-    
+@media (min-width: 300px) and (max-width: 800px) {
+  .grille {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: revert-layer;
+    gap: 20px;
+  }
+  .cartesProduits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .carte {
+    width: 150px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    padding-top: 20px;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  .header nav {
+    padding-top: 60px;
+  }
+  .titre-principal {
+    text-align: center;
+  }
 }
