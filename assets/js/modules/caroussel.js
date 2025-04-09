@@ -7,19 +7,16 @@ const boutonPrecedentHTML = carousselHTML.querySelector(
   "[data-direction='-1']"
 );
 
-
 export default function init() {
-
-    afficherPhoto(compteur);
-    affichePhotosInterval();
-    boutonSuivantHTML.addEventListener("click", auClicBouton);
-    boutonPrecedentHTML.addEventListener("click", auClicBouton);
-
+  afficherPhoto(compteur);
+  affichePhotosInterval();
+  boutonSuivantHTML.addEventListener("click", auClicBouton);
+  boutonPrecedentHTML.addEventListener("click", auClicBouton);
 }
 
 /**
  * Fonction qui prend en paramètre un nombre et qui permet d'afficher l'image du caroussel correspondant à son index
- * @param {*} index 
+ * @param {*} index
  */
 function afficherPhoto(index) {
   cacherPhotos();
@@ -41,7 +38,7 @@ function affichePhotosInterval() {
       compteur = 0;
     }
     afficherPhoto(compteur);
-  }, 3000);
+  }, 1200);
 }
 
 /**
@@ -73,7 +70,6 @@ function auClicBouton(evenement) {
   compteur += direction;
   afficherPhoto(compteur);
 }
-
 
 /**
  * Fonction les boutons de navigation du caroussel d'images
