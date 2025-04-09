@@ -1,168 +1,162 @@
 .entete-evenement {
-    background-image: url(/assets/img/imgPrincipale/Mere-fille-lapin.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    padding-left: 60px;
-    padding-right: 60px;
+  background-image: url(../img/imgPrincipale/Mere-fille-lapin.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-.a-propos > *+* {
-    margin-top: 40px;
+.a-propos > * + * {
+  margin-top: 40px;
 }
 
-.a-propos  {
-    h1 {
-        font-family: amita;
-        font-size: 45px; 
-        margin-top: 50px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    & h2 {
-        font-size: 32px;
-        font-weight: 400;
-    }
+.a-propos {
+  h1 {
+    font-family: amita;
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  & h2 {
+    font-size: 32px;
+    font-weight: 400;
+  }
 }
 
 .a-propos.rouge {
-    background-color: var(--rouge);
+  background-color: var(--rouge);
 }
 
 .a-propos .navigation {
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
 }
 
 .a-propos > div {
-    text-align: center;
+  text-align: center;
 }
 
 .a-propos .caroussel {
-    max-width: 800px;
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 20px 0px;
-    border: solid 5px rgba(26, 26, 26, 0.993);
-    border-radius: 12px;
-    background-color: var(--marine);
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0px;
+  border: solid 5px rgba(26, 26, 26, 0.993);
+  border-radius: 12px;
+  background-color: var(--marine);
 }
 
 .a-propos .caroussel img {
-    max-width: 100%;
-    border-radius: 8px;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 .a-propos .caroussel-bouton {
-    height: 100px;
-    font-size: 45px;
-    color: var(--blanc);
-    /*background-color:rgb(255, 15, 55);*/
-    background-color: transparent;
-    font-weight: 700;
-    border: none;
-    border-radius: 8px;
-    padding: 0px 15px;
+  height: 100px;
+  font-size: 45px;
+  color: var(--blanc);
+  /*background-color:rgb(255, 15, 55);*/
+  background-color: transparent;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0px 15px;
 }
 
 .a-propos .caroussel-bouton:hover {
-    cursor: pointer;
-    color: var(--roseVif);
+  cursor: pointer;
+  color: var(--roseVif);
 }
 
 .a-propos .fond-de-page {
-    max-width: 1200px;
-    margin: 20px auto 50px auto;
-    padding: 20px 0px;
-    border-radius: 10px;
-    background-image: url(/assets/img/imgPrincipale/Nos-deux-vaches-laitieres.jpg);
-    background-size: cover;
+  max-width: 1200px;
+  margin: 20px auto 50px auto;
+  padding: 20px 0px;
+  border-radius: 10px;
+  background-image: url(/assets/img/imgPrincipale/Nos-deux-vaches-laitieres.jpg);
+  background-size: cover;
 }
 
-.a-propos ul {    
-    text-align: left;
-    padding: 20px;
-    padding-left: 50px;
-    list-style: square;
-    list-style-image: url(/assets/img/svg/grass_20dp_1F1F1F_FILL0_wght400_GRAD0_opsz20.svg);  
-    /*box-shadow: 0 0 14px var(--boxShadow); */
-    border: 1px dotted var(--vert);
-    background-color: white;
-    border-radius: 8px; 
+.a-propos ul {
+  text-align: left;
+  padding: 20px;
+  padding-left: 50px;
+  list-style: square;
+  list-style-image: url(/assets/img/svg/grass_20dp_1F1F1F_FILL0_wght400_GRAD0_opsz20.svg);
+  /*box-shadow: 0 0 14px var(--boxShadow); */
+  border: 1px dotted var(--vert);
+  background-color: white;
+  border-radius: 8px;
 }
-
 
 .liste li {
-    font-size: 22px;
-    padding-left: 10px;
-	animation: fadeInListe 1s ease-in both; 
+  font-size: 22px;
+  padding-left: 10px;
+  animation: fadeInListe 1s ease-in both;
 }
 
-
 .liste li:hover {
-    color: var(--vert)
+  color: var(--vert);
 }
 
 .a-propos .principale {
-    max-width: 1200px;
-    display: block;
-    margin: 20px auto;
+  max-width: 1200px;
+  display: block;
+  margin: 20px auto;
 }
 
 .a-propos .article-principal {
-    margin: 20px auto 50px auto;
-    padding: 20px;
+  margin: 20px auto 50px auto;
+  padding: 20px;
 }
 
-.a-propos  .article-principal > *+* {
-    margin-top: 20px;
+.a-propos .article-principal > * + * {
+  margin-top: 20px;
 }
-
 
 .a-propos .article-principal {
-    text-align: left;
-    max-width: 1000px;
+  text-align: left;
+  max-width: 1000px;
 
-    & p {
-        font-size: 22px;
-    }
-    
+  & p {
+    font-size: 22px;
+  }
 }
 
-.a-propos picture {  
-    & img { 
-        max-width: 100%;       
-        border-radius: 10px;
-    }
+.a-propos picture {
+  & img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
 }
 
 .promo {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .texte-bouton-div {
-    padding: 20px;
+  padding: 20px;
 }
 
 .bouton-anim:hover {
-    border: transparent;
-    background: var(--bleuPrincipal);
+  border: transparent;
+  background: var(--bleuPrincipal);
 }
 
 .texte-bouton {
-    
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 @media (max-width: 1000px) {
-    .a-propos .caroussel {
-        max-width: 400px;
-        margin: 50px auto;
-    }
+  .a-propos .caroussel {
+    max-width: 400px;
+    margin: 50px auto;
+  }
 }
