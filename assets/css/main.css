@@ -1,7 +1,7 @@
-@import "./general.css";
-@import "./exceptions.css";
-@import "./langages.css";
-@import "./styles.css";
+@import "../css/general.css";
+@import "../css/exceptions.css";
+@import "../css/langages.css";
+@import "../css/styles.css";
 @import "./formulaire.css";
 @import "./grille.css";
 @import "./mode-nuit.css";
@@ -10,4 +10,4 @@
 @import "./animations.css";
 @import "./boite-modale.css";
 @import "./texte-sur-image.css";
-@import "./a-propos.css";
+@import "../css/a-propos.css";
