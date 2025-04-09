@@ -1,29 +1,29 @@
 let conteneurHTML = document.querySelector(".contenant-modale");
 let elementHTML;
 
- function initBoiteModale() {  
-    creePopUp();
-    afficherMessage();   
+function initBoiteModale() {
+  creePopUp();
+  afficherMessage();
 }
 
 /**
  * Fonction qui crée une boîte modale (popup) et qui insère un gabarit dans le conteneur de gabarit. Une variable prend le dernier élément du conteneur et un écouteur d'événement est mis dessus, qui au clic, affiche la popup.
  */
 
-function creePopUp() { 
+function creePopUp() {
   const gabarit = `
     <div class="boite-modale invisible">
     <div class="en-tete">
     <h1>Un été à la ferme est de retour!🐣🐐&nbsp;&nbsp;<span>X</span></h1>
     </div>
-    <picture><img src="../assets/img/imgEvenement/Carre/Degustation-mensuelle.jpg" alt=""></picture>
+    <picture><img src="../img/imgEvenement/Carre/Degustation-mensuelle.jpg" alt=""></picture>
     <p>Un été à profiter des animaux, de la nature et de la bouffe gourmande et santé.</p>
     <h3>Achetez votre passeport et chandail !&nbsp;&nbsp;&nbsp;Quantités limitées.🎫👕</h3>
     </div>
-  `;  
-    conteneurHTML.insertAdjacentHTML("beforeend", gabarit);
-    elementHTML = conteneurHTML.lastElementChild;
-    elementHTML.addEventListener("click", auClicMessage);
+  `;
+  conteneurHTML.insertAdjacentHTML("beforeend", gabarit);
+  elementHTML = conteneurHTML.lastElementChild;
+  elementHTML.addEventListener("click", auClicMessage);
 }
 
 /**
@@ -59,7 +59,3 @@ export default function onAffichePopup() {
     initBoiteModale();
   }, 5000);
 }
-
-
-
-
