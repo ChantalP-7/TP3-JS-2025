@@ -16,7 +16,7 @@ function creePopUp() {
     <div class="en-tete">
     <h1>Un été à la ferme est de retour!🐣🐐&nbsp;&nbsp;<span>X</span></h1>
     </div>
-    <picture><img src="./assets/img/imgEvenement/Carre/Degustation-mensuelle.jpg" alt="degustation"></picture>
+    <picture><img src="../assets/img/imgEvenement/Carre/Degustation-mensuelle.jpg" alt="degustation"></picture>
     <p>Un été à profiter des animaux, de la nature et de la bouffe gourmande et santé.</p>
     <h3>Achetez votre passeport et chandail !&nbsp;&nbsp;&nbsp;Quantités limitées.🎫👕</h3>
     </div>
