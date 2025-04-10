@@ -37,7 +37,7 @@
     /*--couleur-bg: rgb(4, 32, 49);*/
     --couleur-bg: rgb(3, 22, 34);
     --couleur-texte: white;
-    & .overlay {
+    & .overlay, .paragraphe {
         --couleur-texte: white;
     }
 }
