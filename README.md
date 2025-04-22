@@ -1,4 +1,4 @@
-# TP3 Programmation d'interface Web 
+# TP3 Programmation d'interface Web - Collège Maisonneuve, Montréal
 Ce projet a été fait en trois étapes, soit TP1, TP2, et TP3.
 
 Le TP1, page d'accueil : 
