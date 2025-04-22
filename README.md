@@ -15,6 +15,8 @@ Le TP2, page de formulaire d'achat
 Le TP3, page événementielle, promotion, à-propos etc.
 1. J'ai choisi de mettre une page À-propos incluant des informations de promotions.
 2. Le but de ce dernier TP est de mettre en place des animations dynamiques de plusieurs façons : Par une classe qui permet des animations au déroulement de la page, une fonction qui anime le logo, des fonctions qui animent des objets au survol etc. Le CSS et javascript sont utilisés.
+3. Un mode jour-nuit est mis en place et stocké dans local storage.
+4. Une boîte modale (popup) s'affiche après 5 secondes au chargement de la page et disparaît au clic n'importe où sur la page. Un bouton est mis en évidence pour l'accessibilité.
     
 Voici ma page Web 
 https://chantalp-7.github.io/TP3-JS-2025/
